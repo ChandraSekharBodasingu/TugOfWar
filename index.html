@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tug Of War</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="modal" id="modal">
+      <div class="modal-details">
+        <h1>Tug of War</h1>
+        <h4>Use your strategy like they do in SquidGame</h4>
+        <div class="modal-info">
+          <h3>Game Rules:</h3>
+          <ul>
+            <li>
+              Calculate the Expression before it pulls to the opponent side
+            </li>
+            <li>Wrong Answer leads to Reduction on Progress</li>
+            <li>Must Play the game untill the progress box is filled</li>
+            <li>Some answers are based on your luck, look out for Judge !</li>
+          </ul>
+        </div>
+        <!-- ./ modal-info -->
+        <input type="text" id="playerName" placeholder="Enter your Name" />
+        <button onclick="entry()">Start Game</button>
+      </div>
+      <!-- ./ modal-details -->
+    </div>
+    <!-- ./ Modal -->
+    <div class="wrapper">
+      <div class="img-anim">
+        <img src="./images/rope.png" alt="Rope" id="img-rope" />
+      </div>
+
+      <div class="players">
+        <div class="col">
+          <h1>Opponent</h1>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar" id="progressBarOpponent">
+              <h3>Strength</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="game-box animate__animated" id="gameBox"></div>
+          <!-- ./ game-box -->
+        </div>
+        <div class="col">
+          <h1 id="player">You</h1>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar" id="progressBarPlayer">
+              <h3>Strength</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./ players -->
+
+
+      <footer>
+        <p>
+          <span id="playerFooter"></span> : Dude, My Calc is Correct, Why is the
+          answer different here? <span>Chandu</span> : Over to you , Brendan
+          Eich
+        </p>
+      </footer>
+    </div>
+    <!-- ./ wrapper -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
