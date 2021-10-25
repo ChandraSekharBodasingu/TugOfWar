@@ -1,3 +1,11 @@
+/**
+
+Project: Tug of War
+Author: Chandra Sekhar Bodasingu
+Technologies: HTML, CSS, JS
+
+*/
+
 const rope = document.getElementById("img-rope");
 let totalTurns = 0;
 const gameBox = document.getElementById("gameBox");
